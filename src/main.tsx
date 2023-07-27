@@ -3,7 +3,6 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.tsx";
 import NotFound from "./NotFound";
-import GlobalStyle from "./styles/GlobalStyle.ts";
 import Login from "./pages/user/Login.tsx";
 import Home from "./Home.tsx";
 import Signup from "./pages/user/Signup.tsx";
@@ -45,7 +44,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <GlobalStyle />
     <RouterProvider router={router} />
   </React.StrictMode>
 );
